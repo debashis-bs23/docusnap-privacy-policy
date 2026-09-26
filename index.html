@@ -3,75 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocuSnap – Privacy Policy</title>
+  <title>DocuSnap – Legal</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
-    h1 { color: #3D5AFE; }
-    h2 { margin-top: 2em; color: #333; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #222; line-height: 1.7; }
+    .header { background: #3D5AFE; color: #fff; padding: 28px 20px 0; text-align: center; }
+    .header h1 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.3px; }
+    .header p  { font-size: 0.88rem; opacity: 0.85; margin-top: 4px; }
+    .tabs { display: flex; justify-content: center; gap: 0; margin-top: 20px; }
+    .tab-btn { background: rgba(255,255,255,0.15); color: #fff; border: none; padding: 10px 32px; font-size: 0.95rem; font-weight: 600; cursor: pointer; border-radius: 8px 8px 0 0; transition: background 0.15s; }
+    .tab-btn.active { background: #fff; color: #3D5AFE; }
+    .tab-btn:first-child { margin-right: 4px; }
+    .container { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .meta { font-size: 0.82rem; color: #777; margin-bottom: 24px; }
+    h2 { font-size: 0.95rem; color: #3D5AFE; font-weight: 700; margin: 28px 0 8px; letter-spacing: 0.2px; }
+    p  { font-size: 0.93rem; color: #444; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 8px; }
+    li { font-size: 0.93rem; color: #444; margin-bottom: 4px; line-height: 1.6; }
+    .warning { background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 10px 14px; margin: 10px 0 12px; font-size: 0.88rem; color: #7a4f00; display: flex; gap: 8px; }
+    .warning::before { content: "⚠️"; flex-shrink: 0; }
     a  { color: #3D5AFE; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #888; }
+    footer { text-align: center; font-size: 0.82rem; color: #aaa; margin-top: 48px; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>App:</strong> DocuSnap – Document &amp; Image Utility<br>
-     <strong>Developer:</strong> Debashis<br>
-     <strong>Effective date:</strong> September 26, 2026<br>
-     <strong>Contact:</strong> <a href="mailto:kar.suvra6682@gmail.com">kar.suvra6682@gmail.com</a></p>
 
-  <p>This Privacy Policy describes how DocuSnap ("the App") handles information when you use it on your Android device. We take your privacy seriously and collect as little data as possible.</p>
+<div class="header">
+  <h1>DocuSnap – Legal</h1>
+  <p>App: DocuSnap – Document &amp; Image Utility &nbsp;|&nbsp; Developer: Debashis Kar Suvra</p>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('privacy', this)">Privacy Policy</button>
+    <button class="tab-btn"        onclick="switchTab('terms',   this)">Terms of Service</button>
+  </div>
+</div>
 
-  <h2>1. Information We Collect</h2>
-  <p>DocuSnap processes files, images, and documents that <strong>you explicitly select</strong>. This processing happens entirely on your device. We do not upload, transmit, or store your files on any server.</p>
+<div class="container">
 
-  <h2>2. Advertising (Google AdMob)</h2>
-  <p>The free version of DocuSnap displays ads provided by <strong>Google AdMob</strong>. AdMob may collect the following to serve relevant ads:</p>
-  <ul>
-    <li>Advertising ID (Android Advertising Identifier)</li>
-    <li>Device information (model, OS version)</li>
-    <li>Approximate location (country/region, derived from IP address)</li>
-    <li>App interaction data (ad impressions, clicks)</li>
-  </ul>
-  <p>This data is collected and processed by Google in accordance with <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can opt out of personalised ads at any time via <strong>Android Settings → Privacy → Ads → Opt out of Ads Personalisation</strong>.</p>
-  <p>Upgrading to <strong>DocuSnap Pro</strong> removes all ads and stops AdMob data collection.</p>
+  <!-- ── Privacy Policy ──────────────────────────────────────────────────── -->
+  <div id="privacy" class="tab-panel active">
+    <p class="meta">Effective date: September 26, 2026 &nbsp;·&nbsp; Last updated: September 26, 2026</p>
 
-  <h2>3. In-App Purchases</h2>
-  <p>DocuSnap offers a one-time in-app purchase ("Remove Ads – Pro") processed through the <strong>Google Play Store</strong>. We do not receive or store your payment details. Purchase records are managed by Google Play in accordance with <a href="https://play.google.com/about/privacy-security-deception/" target="_blank">Google Play's policies</a>.</p>
-  <p>We store a local flag on your device to remember your Pro status. This flag is not transmitted to any server.</p>
+    <h2>1. Overview</h2>
+    <p>DocuSnap ("we", "our", or "the app") is a document and image utility application developed by Debashis Kar Suvra. This Privacy Policy explains what information we collect, how we use it, and your rights regarding that information. By using DocuSnap, you agree to this policy.</p>
 
-  <h2>4. Camera &amp; Storage Permissions</h2>
-  <p><strong>Camera:</strong> Used only when you activate the document scanner feature. Camera access is not used for any other purpose and no images are captured without your explicit action.</p>
-  <p><strong>Storage:</strong> Used to read files you select for processing (PDF, images) and to save output files to your device. We do not access files you have not explicitly chosen.</p>
+    <h2>2. Information We Collect</h2>
+    <p>We collect minimal data necessary to provide and improve the app:</p>
+    <ul>
+      <li><strong>Crash &amp; diagnostic data</strong> — collected automatically via Firebase Crashlytics (stack traces, device model, OS version, app version). This helps us fix bugs.</li>
+      <li><strong>Advertising data</strong> — Google AdMob may collect your device's Advertising ID, IP address, and interaction data to serve personalized or non-personalized ads.</li>
+      <li><strong>Usage analytics</strong> — Firebase may collect anonymized session and event data (screen views, feature usage) to help us understand how the app is used.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your name, email address, phone number, or any personally identifiable information directly.</p>
 
-  <h2>5. Data We Do NOT Collect</h2>
-  <ul>
-    <li>We do not create user accounts or collect personal information such as name, email, or phone number.</li>
-    <li>We do not collect precise GPS location.</li>
-    <li>We do not share your files or documents with any third party.</li>
-    <li>We do not use analytics SDKs beyond what AdMob includes.</li>
-  </ul>
+    <h2>3. File &amp; Document Handling</h2>
+    <p>All files you process in DocuSnap (PDFs, images, scanned documents) are handled entirely on your device. We do <strong>not</strong> upload your files to any server. Files are read from and saved to your device's local storage only.</p>
+    <div class="warning">Always keep backups of your important files. DocuSnap is not responsible for data loss resulting from processing operations.</div>
 
-  <h2>6. Data Retention</h2>
-  <p>All file processing is on-device and temporary. Output files are saved to the location you choose on your device. We do not retain copies of your files.</p>
+    <h2>4. OCR &amp; ML Kit</h2>
+    <p>The OCR (text extraction) feature uses Google ML Kit, which runs entirely on-device. Your images are not sent to Google servers for OCR processing. ML Kit uses the on-device model only.</p>
+    <div class="warning">OCR accuracy is not guaranteed. Always verify extracted text before relying on it for important documents.</div>
 
-  <h2>7. Children's Privacy</h2>
-  <p>DocuSnap is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us and we will delete it.</p>
+    <h2>5. Third-Party Services</h2>
+    <p>DocuSnap uses the following third-party services, each with their own privacy policies:</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> (Crashlytics, Analytics) – crash reporting &amp; analytics</li>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> – advertising</li>
+      <li><a href="https://developers.google.com/ml-kit/terms" target="_blank">Google ML Kit</a> – on-device OCR &amp; document scanning</li>
+      <li><a href="https://play.google.com/about/privacy-security-deception/" target="_blank">Google Play Billing</a> – in-app purchases</li>
+    </ul>
+    <p>We recommend reviewing their privacy policies for details on data collected by these services.</p>
 
-  <h2>8. Third-Party Services</h2>
-  <p>The App integrates the following third-party SDKs, each governed by their own privacy policies:</p>
-  <ul>
-    <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> – advertising</li>
-    <li><a href="https://play.google.com/about/privacy-security-deception/" target="_blank">Google Play Billing</a> – in-app purchases</li>
-    <li><a href="https://developers.google.com/ml-kit/terms" target="_blank">Google ML Kit</a> – on-device document scanning (no data leaves your device)</li>
-  </ul>
+    <h2>6. Advertising</h2>
+    <p>DocuSnap displays banner and interstitial ads via Google AdMob. Ads may be personalized based on your interests. You can opt out of personalized ads via <strong>Android Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
+    <p>Upgrading to <strong>DocuSnap Pro</strong> removes all ads and stops AdMob data collection entirely.</p>
 
-  <h2>9. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL with a new effective date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+    <h2>7. Data Retention</h2>
+    <p>Crash reports and analytics are retained by Firebase according to Google's retention policies (typically 90 days for Crashlytics, 14 months for Analytics). We do not retain any other user data on our servers.</p>
 
-  <h2>10. Contact Us</h2>
-  <p>If you have questions about this Privacy Policy, contact us at:<br>
-  <a href="mailto:kar.suvra6682@gmail.com">kar.suvra6682@gmail.com</a></p>
+    <h2>8. Children's Privacy</h2>
+    <p>DocuSnap is not directed at children under 13. We do not knowingly collect personal data from children. If you believe a child has provided us with data, please contact us and we will delete it promptly.</p>
 
-  <footer>© 2026 DocuSnap. All rights reserved.</footer>
+    <h2>9. Data Security</h2>
+    <p>We implement reasonable security measures. However, no method of electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+    <div class="warning">PDF password protection in DocuSnap uses RC4-128 encryption, which is not considered cryptographically strong by modern standards. For documents requiring high security, use a dedicated encryption tool.</div>
+
+    <h2>10. Your Rights</h2>
+    <p>Depending on your region, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request deletion of your data</li>
+      <li>Opt out of analytics and crash reporting (by uninstalling the app)</li>
+      <li>Opt out of personalized ads via Android device settings</li>
+    </ul>
+    <p>To exercise these rights, contact us at the address below.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at:<br>
+    Email: <a href="mailto:support@docusnap.app">support@docusnap.app</a><br>
+    Developer: Debashis Kar Suvra<br>
+    Location: Dhaka, Bangladesh</p>
+  </div>
+
+  <!-- ── Terms of Service ────────────────────────────────────────────────── -->
+  <div id="terms" class="tab-panel">
+    <p class="meta">Effective date: September 26, 2026</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By downloading, installing, or using DocuSnap, you agree to be bound by these Terms of Service. If you do not agree, do not use the app.</p>
+
+    <h2>2. License to Use</h2>
+    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use DocuSnap on your personal Android device for your own personal or business purposes, subject to these Terms.</p>
+    <p>You may <strong>not</strong>:</p>
+    <ul>
+      <li>Reverse engineer, decompile, or disassemble the app</li>
+      <li>Redistribute or resell the app or its content</li>
+      <li>Use the app to violate any applicable laws or regulations</li>
+      <li>Use the app to process files you do not have the right to use</li>
+    </ul>
+
+    <h2>3. Pro Upgrade</h2>
+    <p>DocuSnap offers a one-time Pro upgrade that unlocks premium features (including PDF Security, unlimited signatures, and no ads). The purchase is processed through Google Play. Refunds are subject to Google Play's refund policy.</p>
+    <ul>
+      <li>Pro access is tied to your Google account used for purchase</li>
+      <li>Pro features are available on all devices where you're signed into that account</li>
+      <li>We reserve the right to modify Pro features with reasonable notice</li>
+    </ul>
+    <div class="warning">In-app purchases are processed by Google Play. DocuSnap does not store your payment information.</div>
+
+    <h2>4. Advertising</h2>
+    <p>The free version of DocuSnap displays advertisements provided by Google AdMob. Ads appear as banners and occasional interstitials. We reserve the right to change the frequency or type of ads at any time. Pro subscribers have all ads removed.</p>
+
+    <h2>5. Disclaimer of Warranties</h2>
+    <p>DocuSnap is provided "AS IS" and "AS AVAILABLE" without any warranty of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+    <div class="warning">We do not warrant that the app will be uninterrupted, error-free, or free of viruses. Use at your own risk.</div>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, DocuSnap and its developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+    <ul>
+      <li>Loss of data or files</li>
+      <li>Loss of profits or revenue</li>
+      <li>Damage to your device</li>
+      <li>Errors in OCR text extraction</li>
+      <li>Corruption of documents during processing</li>
+    </ul>
+    <p>Our total liability to you for any claim shall not exceed the amount you paid for the app in the preceding 12 months.</p>
+
+    <h2>7. Important Warnings</h2>
+    <div class="warning"><strong>OCR / Text Extraction:</strong> Extracted text may contain errors. Do not rely on OCR output for legal, medical, or financial documents without manual verification.</div>
+    <div class="warning"><strong>PDF Security:</strong> Password-protected PDFs use RC4-128 encryption. This is not considered strong by modern cryptographic standards. Do not use this feature for highly sensitive documents.</div>
+    <div class="warning"><strong>File Operations:</strong> Compression, resizing, conversion, and merging operations may be irreversible. Always work on copies of important files.</div>
+    <div class="warning"><strong>Scanner:</strong> Scanned document quality depends on your camera and lighting. The app is not a substitute for professional scanning equipment.</div>
+
+    <h2>8. User Content &amp; Responsibility</h2>
+    <p>You are solely responsible for the files and content you process with DocuSnap. You must ensure you have the legal right to use, modify, and process all files you select in the app.</p>
+    <p>You agree <strong>not</strong> to use DocuSnap to:</p>
+    <ul>
+      <li>Process copyrighted materials without authorization</li>
+      <li>Create or distribute illegal content</li>
+      <li>Circumvent digital rights management (DRM) protection</li>
+      <li>Process documents containing personal data of others without their consent</li>
+    </ul>
+
+    <h2>9. Intellectual Property</h2>
+    <p>All rights, title, and interest in DocuSnap, including all intellectual property rights, are owned by Debashis Kar Suvra. These Terms do not grant you any rights in our trademarks, logos, or branding.</p>
+
+    <h2>10. Termination</h2>
+    <p>We reserve the right to terminate or suspend your access to DocuSnap at any time for violation of these Terms. You may terminate your use of the app by uninstalling it from your device.</p>
+
+    <h2>11. Governing Law</h2>
+    <p>These Terms are governed by the laws of Bangladesh. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts of Dhaka, Bangladesh.</p>
+
+    <h2>12. Changes to Terms</h2>
+    <p>We may update these Terms at any time. Continued use of DocuSnap after changes are posted constitutes your acceptance of the revised Terms. We recommend reviewing this page periodically.</p>
+
+    <h2>13. Contact</h2>
+    <p>For questions about these Terms, contact us at:<br>
+    Email: <a href="mailto:support@docusnap.app">support@docusnap.app</a><br>
+    Developer: Debashis Kar Suvra, Dhaka, Bangladesh</p>
+  </div>
+
+  <footer>© 2026 DocuSnap · Debashis Kar Suvra · All rights reserved.</footer>
+</div>
+
+<script>
+  function switchTab(id, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
 </body>
 </html>
