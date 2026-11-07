@@ -43,7 +43,7 @@
 
   <!-- ── Privacy Policy ──────────────────────────────────────────────────── -->
   <div id="privacy" class="tab-panel active">
-    <p class="meta">Effective date: September 26, 2026 &nbsp;·&nbsp; Last updated: November 2, 2026</p>
+    <p class="meta">Effective date: September 26, 2026 &nbsp;·&nbsp; Last updated: November 7, 2026</p>
 
     <h2>1. Overview</h2>
     <p>DocuSnap ("the Application", "we", "our", or "us") is a document and image utility application developed and maintained by Debashis Kar Suvra ("Developer"). This Privacy Policy sets forth the terms and conditions under which the Developer collects, uses, discloses, and safeguards information obtained from users ("you", "User") of the Application. By installing or using DocuSnap, you expressly consent to the practices described herein. If you do not agree to this Privacy Policy in its entirety, you must immediately discontinue use of the Application.</p>
@@ -51,54 +51,57 @@
     <h2>2. Information We Collect</h2>
     <p>The Developer collects only the minimum data necessary to operate and improve the Application:</p>
     <ul>
-      <li><strong>Crash &amp; diagnostic data</strong> — Automatically transmitted to Firebase Crashlytics upon application failure, comprising stack traces, device model identifiers, operating system version, and application version number. Such data is used exclusively for defect remediation.</li>
-      <li><strong>Advertising data</strong> — Google AdMob may independently collect the device Advertising Identifier (Android Advertising ID), Internet Protocol address, and ad interaction data (impressions, clicks) in order to deliver personalized or non-personalized advertisements.</li>
-      <li><strong>Usage analytics</strong> — Firebase Analytics may collect anonymized session metadata and feature-interaction events (e.g., screen views, tool usage) solely to inform product improvements.</li>
+      <li>Crash &amp; diagnostic data — Sent to Firebase Crashlytics when the Application fails: stack traces, crash time, device model, operating system and application version, and a Crashlytics installation identifier. The Application removes file names and file paths from crash messages before they are sent. Used only to fix defects, on the basis of the Developer's legitimate interest in a working app.</li>
+      <li>Advertising data (free version only) — Google AdMob and Google's User Messaging Platform (the consent form) may collect the Android Advertising ID, IP address (from which an approximate location can be inferred), device and app information, and ad interactions (impressions, clicks) to show personalised or non-personalised ads, measure them and record your consent choices. Where the law requires consent, no ad is requested until you have answered the consent form.</li>
+      <li>Usage analytics — Firebase Analytics collects app events (for example screen views, which tool was used, a file was saved), device and app information, and pseudonymous identifiers (the Firebase app instance ID and, where you allow it, the Advertising ID). It never receives your file names, document content or search text. Where the law requires consent (for example in the EEA and UK), Analytics stays off until you agree in the consent form, and turns off again if you withdraw.</li>
+      <li>Feedback you send — If you use Send Feedback, your message, the time, the app version and the platform are stored in the Developer's Firebase Realtime Database so the Developer can read them. Feedback is kept until the Developer deletes it and is not shared with others. Please do not include personal details in your message.</li>
+      <li>Purchases — Google Play Billing processes Pro purchases. The Application receives the purchase status and a purchase token to unlock Pro; it never sees your payment details.</li>
+      <li>Text recognition and QR reading — Google ML Kit runs on your device through Google Play services. Your images are not sent to Google, but Google Play services may download the models and send Google basic usage and performance data about these features, under Google's terms.</li>
     </ul>
-    <p>The Developer does <strong>not</strong> receive, store, or transmit any personally identifiable information, including your name, email address, or telephone number. The Application keeps the name and email you enter for e-signing on your device only.</p>
+    <p>The Developer does not ask for your name, email address or phone number and does not sell personal data. Feedback reaches the Developer exactly as you type it. The name and email you enter for e-signing, and your seal details, stay on your device.</p>
 
     <h2>3. File &amp; Document Handling</h2>
-    <p>All files processed within the Application — including, but not limited to, PDF documents, images, and scanned materials — are handled exclusively on your device. The Developer does <strong>not</strong> upload, transmit, or retain copies of your files on any external server or cloud infrastructure. All read and write operations are confined to your device's local storage.</p>
-    <p><strong>Data stored on your device:</strong> your history, OCR text, scan drafts, signatures and signed-document records (including the name and email entered for e-signing) are kept on your phone and are not uploaded to us. If Android backup is turned on, Android may copy saved files to your Google account.</p>
-    <p><strong>Printing:</strong> printing uses Android's print system and sends the document to the printer you select.</p>
+    <p>All files processed within the Application — including, but not limited to, PDF documents, images, and scanned materials — are handled exclusively on your device. The Developer does not upload, transmit, or retain copies of your files on any external server or cloud infrastructure. The Application reads and writes files only in your device's storage. If you have turned on Android's system backup, Android may copy saved files to your Google account. Google operates that backup, not the Developer.</p>
+    <p>Data stored on your device: your history, OCR text, scan drafts, signatures, signed-document records (including the name and email entered for e-signing) and your seal details and issued-seal log are kept on your phone, are not uploaded to us, and are excluded from Android backup and device-to-device transfer. Documents you save to your phone's storage may be copied by Android backup if you have turned it on.</p>
+    <p>Printing uses Android's print system and sends the document to the printer you select.</p>
     <div class="warning">The Developer strongly advises you to maintain independent backups of all files prior to processing. The Developer expressly disclaims liability for any data loss arising from use of the Application.</div>
 
-    <h2>4. Optical Character Recognition (OCR) &amp; ML Kit</h2>
-    <p>The text-extraction feature of the Application utilises Google ML Kit, which performs all inference operations locally on your device using an on-device machine-learning model. No image data or documents are transmitted to Google servers or any other external server in connection with OCR processing. The ML Kit models are provided by Google Play services and downloaded by your device, which may need an internet connection the first time you use OCR.</p>
+    <h2>4. OCR &amp; ML Kit</h2>
+    <p>The text-extraction feature of the Application reads text on your device. For most scripts it uses Google ML Kit, whose models are provided by Google Play services and downloaded by your device, which may need an internet connection the first time you use OCR. For Bangla, Arabic, Urdu, Russian and other languages that ML Kit cannot read, it uses the open-source Tesseract OCR engine, which Google Play downloads as an optional part of the Application the first time you choose one of these languages. No image data or documents are transmitted to Google servers or any other external server in connection with OCR processing.</p>
+    <p>Tesseract language packs are downloaded from the open-source Tesseract project on GitHub, only when you choose that language. The download contains only language data, and each file is checked against a fixed fingerprint before it is used. DocuSnap never uploads your images or text. You can delete downloaded languages in Settings › Text recognition languages.</p>
     <div class="warning">OCR accuracy is not guaranteed and may vary depending on image quality, language, and font characteristics. You must independently verify all extracted text before relying upon it for legal, medical, financial, or any other critical purposes.</div>
 
     <h2>5. Third-Party Services</h2>
     <p>The Application integrates the following third-party services. Each service operates under its own privacy policy, which governs the collection and processing of data attributable to that service:</p>
     <ul>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a> (Crashlytics &amp; Analytics) — crash reporting and usage analytics</li>
-      <li><a href="https://policies.google.com/privacy" target="_blank">Google AdMob</a> — advertising services</li>
-      <li><a href="https://developers.google.com/ml-kit/terms" target="_blank">Google ML Kit</a> — on-device OCR and document scanning</li>
-      <li><a href="https://policies.google.com/privacy" target="_blank">Google Play services</a> — text recognition and QR reading models</li>
-      <li><a href="https://play.google.com/about/privacy-security-deception/" target="_blank">Google Play Billing</a> — in-app purchase processing</li>
+      <li>Google Firebase (Crashlytics, Analytics, Realtime Database for feedback) — firebase.google.com/support/privacy</li>
+      <li>Google AdMob and User Messaging Platform (consent) — policies.google.com/privacy</li>
+      <li>Google ML Kit — developers.google.com/ml-kit/terms</li>
+      <li>Google Play Billing — play.google.com/about/privacy-security-deception</li>
+      <li>Google Play services — policies.google.com/privacy</li>
     </ul>
     <p>The Developer encourages you to review the privacy policies of these third-party services prior to use.</p>
 
     <h2>6. Advertising</h2>
-    <p>The free tier of the Application displays banner and interstitial advertisements served by Google AdMob. Such advertisements may be personalized based on your interests as determined by Google. You may opt out of personalized advertising at any time by navigating to <strong>Android Settings → Privacy → Ads → Opt out of Ads Personalisation</strong> on your device.</p>
-    <p>Rewarded or other ad formats may also be shown. Where consent is required, you can change your choices in Settings under "Privacy choices".</p>
-    <p>Users who upgrade to <strong>DocuSnap Pro</strong> will have all advertisements removed, and AdMob data collection attributable to the Application will cease accordingly.</p>
+    <p>The free tier of the Application displays banner and interstitial advertisements served by Google AdMob. Such advertisements may be personalized based on your interests as determined by Google. You may opt out of personalized advertising at any time by navigating to Settings → Privacy → Ads → Opt out of Ads Personalisation on your device. Rewarded or other ad formats may also be shown. Where consent is required, you can change your choices in Settings under “Privacy choices”.</p>
+    <p>Users who upgrade to DocuSnap Pro will have all advertisements removed, and AdMob data collection attributable to the Application will cease accordingly.</p>
 
     <h2>7. Data Retention</h2>
-    <p>Crash reports and analytics data are retained by Google Firebase in accordance with Google's own data retention schedules (generally 90 days for Crashlytics data and 14 months for Analytics data). The Developer does not independently retain any User data on proprietary servers.</p>
+    <p>Crash reports are kept by Firebase Crashlytics for 90 days and Analytics data for up to 14 months, under Google's retention settings. Feedback messages are kept in the Developer's Firebase Realtime Database until the Developer deletes them. Advertising data is kept by Google under its own policies. The Developer keeps no other user data on its own servers.</p>
 
     <h2>8. Children's Privacy</h2>
     <p>The Application is not directed at, nor intended for use by, persons under the age of 13. The Developer does not knowingly collect personal data from children under the age of 13. Should you have reason to believe that a child has provided personal information in connection with the Application, you are requested to contact the Developer immediately, and the Developer will take prompt steps to delete such information.</p>
 
     <h2>9. Data Security</h2>
     <p>The Developer implements commercially reasonable technical and organisational measures to protect data processed in connection with the Application. Notwithstanding the foregoing, no method of electronic transmission or storage is wholly secure, and the Developer cannot warrant or guarantee absolute security of any data.</p>
-    <div class="warning">PDF password protection within the Application employs RC4-128-bit encryption. This cipher is not regarded as cryptographically robust by contemporary standards. Users requiring a high degree of document security are advised to employ dedicated, industry-standard encryption tools.</div>
+    <div class="warning">PDF password protection within the Application uses AES-256 encryption (PDF standard security handler, revision 6). Protection is only as strong as the password you choose: a short or common password can be guessed. A forgotten password cannot be recovered by the Developer.</div>
 
     <h2>10. Your Rights</h2>
     <p>Subject to the laws applicable in your jurisdiction, you may have the following rights with respect to your personal data:</p>
     <ul>
       <li>The right to request access to personal data held about you</li>
       <li>The right to request erasure of your personal data</li>
-      <li>The right to withdraw consent to analytics and crash-reporting data collection (effected by uninstalling the Application)</li>
+      <li>The right to withdraw consent to personalised ads and analytics at any time in Settings → Privacy choices (where consent is required), and to stop crash reporting by uninstalling the Application</li>
       <li>The right to opt out of personalized advertising via your Android device settings</li>
     </ul>
     <p>To exercise any of the above rights, please contact the Developer using the contact details set out below.</p>
@@ -109,8 +112,7 @@
     <h2>12. Contact</h2>
     <p>All enquiries relating to this Privacy Policy should be directed to:<br>
     Email: <a href="mailto:kar.suvra@gmail.com">kar.suvra@gmail.com</a><br>
-    Developer: Debashis Kar Suvra<br>
-    Location: Dhaka, Bangladesh</p>
+    Developer: Debashis Kar Suvra</p>
   </div>
 
   <!-- ── Terms of Service ────────────────────────────────────────────────── -->
